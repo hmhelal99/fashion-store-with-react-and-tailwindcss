@@ -10,9 +10,9 @@ import BannerInfo from "./info.banner";
 const HomeBanner = () => {
   return (
     <Fragment>
-      <section className="py-16">
-        <div className="container flex home-banner">
-          <div className="w-5/12 pr-3">
+      <section className="py-8 md:py-16">
+        <div className="container flex flex-col md:flex-row home-banner">
+          <div className="w-full md:w-5/12 md:pr-3">
             <BannerInfo
               item={{
                 title: "Spring Collection <br /> Style To",
@@ -22,9 +22,9 @@ const HomeBanner = () => {
               }}
             />
           </div>
-          <div className="w-7/12 pl-3">
+          <div className="w-full md:w-7/12 md:pl-3">
             <div className="flex">
-              <div className="pr-3">
+              <div className="md:pr-3">
                 <BannerInfo
                   item={{
                     title: "Up to 70% Off & <br /> Free Shipping",
@@ -46,7 +46,7 @@ const HomeBanner = () => {
                 />
               </div>
             </div>
-            <div className="pt-5">
+            <div className="md:pt-5">
               <div>
                 <BannerInfo
                   item={{

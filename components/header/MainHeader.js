@@ -1,19 +1,23 @@
 import { Fragment } from "react";
 import Image from "next/image";
 import logo from "../../public/images/nav-log.png";
-import {FaSearch,FaRegUser,FaRegHeart} from "react-icons/fa";
+import {FaSearch,FaRegUser,FaRegHeart, FaBars} from "react-icons/fa";
 import {BsCartCheck} from "react-icons/bs";
 import Link from "next/link";
+
 
 const MainHeader = () => {
   return (
     <Fragment>
       <div className="py-4">
         <div className="container flex justify-between">
+          <div className="block md:hidden">
+            <FaBars className="text-xl cursor-pointer"/>
+          </div>
           <div className="flex items-center">
             <Image src={logo} alt="Fashion Store"/>
           </div>
-          <div className="">
+          <div className="hidden md:block">
                 <div className="relative border border-[#e7e7e7] h-12 overflow-hidden">
                     <select className="text-sm h-full max-h-full px-6 text-center text-gray-text outline-none border-r-[1px] border-r-[#e7e7e7]">
                         <option>All Categories</option>
@@ -34,11 +38,11 @@ const MainHeader = () => {
                     <Link href="/">
                         <a className="flex flex-col items-center text-gray-text gap-2 group-hover:text-secondary transition duration-700">
                             <FaRegUser className="text-xl"/>
-                            <span>My Account</span>
+                            <span className="hidden md:block">My Account</span>
                         </a>
                     </Link>
                 </li>
-                <li className="group">
+                <li className="group hidden md:block">
                     <Link href="/">
                         <a className="flex flex-col items-center text-gray-text gap-2 group-hover:text-secondary transition duration-700">
                             <FaRegHeart className="text-xl"/>
@@ -50,7 +54,7 @@ const MainHeader = () => {
                     <Link href="/">
                         <a className="flex flex-col items-center text-gray-text gap-2 group-hover:text-secondary transition duration-700">
                             <BsCartCheck className="text-xl"/>
-                            <span>My Cart</span>
+                            <span className="hidden md:block">My Cart</span>
                         </a>
                     </Link>
                 </li>

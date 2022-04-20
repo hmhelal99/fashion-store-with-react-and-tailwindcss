@@ -7,10 +7,10 @@ const TopBar = () => {
   return (
     <Fragment>
       <div className="bg-secondary py-3">
-        <div className="container flex justify-between items-center">
+        <div className="container flex justify-center md:justify-between items-center">
           <div>
             <ul className="flex gap-5">
-              <li className="top-bar-text with-bar">Welcome to Netmark online Store</li>
+              <li className="top-bar-text with-bar hidden md:block">Welcome to Netmark online Store</li>
               <li className="top-bar-text with-bar flex gap-1 items-center"><FaShippingFast/>Track Your Order</li>
               <li className="top-bar-text flex gap-1 items-center">
                 <BsEnvelope/>  
@@ -21,7 +21,7 @@ const TopBar = () => {
             </ul>
           </div>
           <div>
-            <ul className="flex gap-5">
+            <ul className="hidden md:flex gap-5">
                 <li className="top-bar-text">
                     <Link href="/">
                     <a>About Us</a>

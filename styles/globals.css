@@ -28,6 +28,9 @@
     p{
         @apply text-gray-text;
     }
+    .container{
+        @apply px-2 md:px-0;
+    }
 }
 .small-text{
     @apply text-base text-gray-text;

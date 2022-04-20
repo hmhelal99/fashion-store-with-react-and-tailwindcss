@@ -16,10 +16,25 @@ const ProductCarousel = () => {
             <SectionTitle title="Our Best Seller"/>
             <Swiper
             autoplay={{delay:3000, disableOnInteraction:false}}
-            spaceBetween={5}
-            slidesPerView={5}
+            spaceBetween={1}
+            slidesPerView={2}
             navigation={true}
             modules={[Navigation,Autoplay]}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+              },
+
+            }}
             >
                 {products.map((item, idx) => {
                         return (

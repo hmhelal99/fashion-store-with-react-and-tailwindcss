@@ -11,8 +11,8 @@ const Blogs = () => {
     <Fragment>
       <section className="py-12">
         <SectionTitle title="From The Blog" />
-        <div className="container flex">
-          <div className="w-1/4 group pr-2 pl-2">
+        <div className="container flex flex-wrap">
+          <div className="w-2/4 md:w-1/4 group pr-2 pl-2 mb-4">
             <div>
               <Image src={img1} />
             </div>
@@ -26,7 +26,7 @@ const Blogs = () => {
               </button>
             </div>
           </div>
-          <div className="w-1/4 group pr-2 pl-2">
+          <div className="w-2/4 md:w-1/4 group pr-2 pl-2 mb-4">
             <div>
               <Image src={img2} />
             </div>
@@ -40,7 +40,7 @@ const Blogs = () => {
               </button>
             </div>
           </div>
-          <div className="w-1/4 group pr-2 pl-2">
+          <div className="w-2/4 md:w-1/4 group pr-2 pl-2 mb-4">
             <div>
               <Image src={img3} />
             </div>
@@ -54,7 +54,7 @@ const Blogs = () => {
               </button>
             </div>
           </div>
-          <div className="w-1/4 group pr-2 pl-2">
+          <div className="w-2/4 md:w-1/4 group pr-2 pl-2 mb-4">
             <div>
               <Image src={img4} />
             </div>

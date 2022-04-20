@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <Fragment>
       <footer className="bg-[#1d1c1c] text-white-color">
-        <div className="container flex py-14">
-          <div className="w-1/4">
+        <div className="container flex flex-wrap py-14">
+          <div className="w-2/4 md:w-1/4">
             <h2
               className="relative text-xl mb-6
               after:w-[60px] after:h-0.5 after:bg-[gray] after:absolute
@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="w-1/4 flex">
+          <div className="w-2/4 md:w-1/4 flex">
             <div className="mr-8">
               <h2
                 className="relative text-xl mb-6
@@ -111,7 +111,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="w-1/4">
+          <div className="w-2/4 md:w-1/4">
             <h2
               className="relative text-xl mb-6
               after:w-[60px] after:h-0.5 after:bg-[gray] after:absolute
@@ -133,7 +133,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="w-1/4">
+          <div className="w-2/4 md:w-1/4">
             <h2
               className="relative text-xl mb-6
               after:w-[60px] after:h-0.5 after:bg-[gray] after:absolute
@@ -157,7 +157,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="container flex justify-between border-t-2 border-[#ddd] pt-4">
+        <div className="container flex flex-col md:flex-row gap-3 items-center justify-center md:justify-between border-t-2 border-[#ddd] pt-4">
             <div>
               <p className="text-white-color">Copyright © 2022 Suruchi . All Rights Reserved.Design By Suruchi</p>
             </div>

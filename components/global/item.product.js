@@ -10,7 +10,7 @@ import {BsCartCheck} from "react-icons/bs";
 const ProductItem = ({product}) => {
   return (
     <Fragment>
-      <div className="basis-1/5 pr-2 pl-2 mb-8 rounded-sm">
+      <div className="basis-1/2 md:basis-1/5 pr-2 pl-2 mb-8 rounded-sm">
         <div>
           <Link href="/">
             <a className="group relative block">
@@ -51,10 +51,15 @@ const ProductItem = ({product}) => {
           </div>
           <div className="flex gap-1.5 items-center mt-3">
             <Link href="/">
-              <a className="flex border border-border-color items-center py-2 px-3 text-gray-text rounded-sm transition delay-75 hover:bg-secondary hover:text-white-color"> <BsCartCheck/> + Add To Cart</a>
+              <a className="flex border border-border-color 
+              items-center py-2 px-3 
+              text-gray-text rounded-sm 
+              text-sm md:text-md
+              transition delay-75 
+              hover:bg-secondary hover:text-white-color"> <BsCartCheck/> + Add To Cart</a>
             </Link>
-            <span className="border border-border-color items-center py-3 px-3 cursor-pointer  text-gray-text  rounded-sm transition delay-75 hover:bg-secondary hover:text-white-color"><FaRegHeart/></span>
-            <span className="border border-border-color items-center py-3 px-3 cursor-pointer  text-gray-text  rounded-sm transition delay-75 hover:bg-secondary hover:text-white-color"><FaRegEye/></span>
+            <span className="border border-border-color items-center py-2.5 md:py-3 px-3 cursor-pointer  text-gray-text  rounded-sm transition delay-75 hover:bg-secondary hover:text-white-color"><FaRegHeart/></span>
+            <span className="border border-border-color items-center py-2.5 md:py-3 px-3 cursor-pointer  text-gray-text  rounded-sm transition delay-75 hover:bg-secondary hover:text-white-color"><FaRegEye/></span>
           </div>
         </div>
       </div>

@@ -25,29 +25,32 @@ const Hero = () => {
             <div className="bg-[url('/images/slider1.png')] bg-cover bg-no-repeat bg-center">
               <div className="container">
                 <div className="py-20 hero-content">
-                  <p className="flex items-center gap-2 text-gray-text">
+                  <p className="flex items-center justify-center md:justify-start gap-2 
+                  text-gray-text ">
                     <Image src={textShapeImg} /> New Collection
                   </p>
-                  <h2 className="text-5xl font-semibold py-6">
+                  <h2 className="text-3xl md:text-5xl font-semibold py-6  text-center md:text-left">
                     The Great Fashion <br /> Collection 2022
                   </h2>
-                  <p className="small-text pb-7">
+                  <p className="small-text pb-7 text-center md:text-left">
                     Up To 40% Off Final Sale Items. <br />
                     Caught in the Moment!
                   </p>
-                  <BtnWithIcon />
+                  <div className="flex justify-center md:justify-start">
+                    <BtnWithIcon />
+                  </div>
                 </div>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="bg-[url('/images/slider2.png')] bg-cover bg-no-repeat bg-center">
-              <div className="container flex justify-end">
+              <div className="container flex justify-center md:justify-end">
                 <div className="py-20 text-center hero-content">
                   <p className="flex items-center gap-2 text-gray-text w-fit mx-auto">
                     <Image src={textShapeImg} /> New Collection
                   </p>
-                  <h2 className="text-5xl font-semibold py-6">
+                  <h2 className="text-3xl md:text-5xl font-semibold py-6">
                     The Great Fashion <br /> Collection 2022
                   </h2>
                   <p className="small-text pb-7">

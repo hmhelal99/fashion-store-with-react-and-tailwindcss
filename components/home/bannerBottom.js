@@ -10,7 +10,7 @@ const BannerBottom = () => {
   return (
     <Fragment>
       <section className="">
-        <div className="container flex gap-5">
+        <div className="container hidden md:flex gap-5">
           <div className="">
             <BannerInfo
               item={{

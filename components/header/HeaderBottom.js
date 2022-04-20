@@ -7,7 +7,7 @@ import MenuItem from "./item.menu";
 const HeaderBottom = () => {
     return (
         <Fragment>
-            <div className="py-3 border border-border-color main-menu">
+            <div className="py-3 border border-border-color main-menu  hidden md:block">
                 <div className="container flex justify-between items-center">
                     <nav>
                       <ul className="flex gap-8">
